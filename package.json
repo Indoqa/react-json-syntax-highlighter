@@ -1,6 +1,6 @@
 {
   "name": "react-json-syntax-highlighter",
-  "version": "0.1.10",
+  "version": "0.1.12",
   "description": "Serialize javascript objects as highlighted, formatted json",
   "main": "./dist/ReactJsonSyntaxHighlighter.min.js",
   "scripts": {
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "autoprefixer": "6.3.6",
-    "autoprefixer-loader": "^3.2.0",
+    "autoprefixer-loader": "3.2.0",
     "babel-core": "6.3.15",
     "babel-eslint": "6.0.2",
     "babel-loader": "6.2.0",
@@ -44,14 +44,14 @@
     "eslint": "2.5.3",
     "eslint-config-indoqa": "1.0.14",
     "eslint-plugin-react": "4.2.3",
-    "express": "^4.13.4",
-    "extract-text-webpack-plugin": "^1.0.1",
+    "express": "4.13.4",
+    "extract-text-webpack-plugin": "1.0.1",
     "react": "15.0.1",
     "react-dom": "15.0.1",
     "style-loader": "0.13.1",
     "stylus-loader": "1.5.1",
     "webpack": "1.13.0",
-    "webpack-dev-middleware": "^1.6.1",
-    "webpack-hot-middleware": "^2.10.0"
+    "webpack-dev-middleware": "1.6.1",
+    "webpack-hot-middleware": "2.10.0"
   }
 }
