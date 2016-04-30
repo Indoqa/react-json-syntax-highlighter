@@ -5,8 +5,9 @@
   "main": "./dist/ReactJsonSyntaxHighlighter.min.js",
   "scripts": {
     "bundle": "webpack --config webpack.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "npm run bundle"
+    "dev": "node ./playground/server.js",
+    "prepublish": "npm run bundle",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -43,11 +44,14 @@
     "eslint": "2.5.3",
     "eslint-config-indoqa": "1.0.14",
     "eslint-plugin-react": "4.2.3",
+    "express": "^4.13.4",
     "extract-text-webpack-plugin": "^1.0.1",
     "react": "15.0.1",
     "react-dom": "15.0.1",
     "style-loader": "0.13.1",
     "stylus-loader": "1.5.1",
-    "webpack": "1.13.0"
+    "webpack": "1.13.0",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.10.0"
   }
 }
