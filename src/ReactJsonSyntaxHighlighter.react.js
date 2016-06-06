@@ -2,7 +2,7 @@ import React, {PropTypes} from 'react'
 
 import './ReactJsonSyntaxHighlighter.styl'
 
-// see // see http://stackoverflow.com/questions/4810841/how-can-i-pretty-print-json-using-javascript
+// see http://stackoverflow.com/questions/4810841/how-can-i-pretty-print-json-using-javascript
 const ReactJsonSyntaxHighlighter = ({obj}) => {
   if (Object.keys(obj).length === 0) {
     return null
