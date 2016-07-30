@@ -1,6 +1,6 @@
 {
   "name": "react-json-syntax-highlighter",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "Serialize javascript objects as highlighted, formatted json",
   "main": "./dist/ReactJsonSyntaxHighlighter.min.js",
   "scripts": {
