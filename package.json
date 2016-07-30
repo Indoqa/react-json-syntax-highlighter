@@ -27,8 +27,8 @@
   },
   "homepage": "https://github.com/Indoqa/react-json-syntax-highlighter#readme",
   "peerDependencies": {
-    "react": "^15.0.0-0",
-    "react-dom": "^15.0.0-0"
+    "react": "^0.14.0 || ^15.0.0-0",
+    "react-dom": "^0.14.0 || ^15.0.0-0"
   },
   "devDependencies": {
     "autoprefixer": "6.3.6",
@@ -48,8 +48,9 @@
     "extract-text-webpack-plugin": "1.0.1",
     "react": "15.0.1",
     "react-dom": "15.0.1",
-    "style-loader": "0.13.1",
-    "stylus-loader": "1.5.1",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.2",
+    "stylus-loader": "^2.0.0",
     "webpack": "1.13.0",
     "webpack-dev-middleware": "1.6.1",
     "webpack-hot-middleware": "2.10.0"
