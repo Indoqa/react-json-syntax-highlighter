@@ -27,8 +27,8 @@
   },
   "homepage": "https://github.com/Indoqa/react-json-syntax-highlighter#readme",
   "peerDependencies": {
-    "react": "15.0.1",
-    "react-dom": "15.0.1"
+    "react": "^15.0.0-0",
+    "react-dom": "^15.0.0-0"
   },
   "devDependencies": {
     "autoprefixer": "6.3.6",
