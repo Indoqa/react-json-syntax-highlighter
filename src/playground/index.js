@@ -1,12 +1,6 @@
 import React from 'react'
 import {render} from 'react-dom'
-import ReactJsonSyntaxHighlighter from '../src/ReactJsonSyntaxHighlighter.react'
-
-const enableHotReloading = () => {
-  if (module.hot) {
-    module.hot.accept()
-  }
-}
+import ReactJsonSyntaxHighlighter from '../main/ReactJsonSyntaxHighlighter.react.js'
 
 const renderAppWrappedInReduxAndRouter = () => {
   const obj = {
@@ -20,8 +14,14 @@ const renderAppWrappedInReduxAndRouter = () => {
   }
   render(
     <ReactJsonSyntaxHighlighter obj={obj} />,
-    document.getElementById('playground')
+    document.getElementById('app')
   )
+}
+
+const enableHotReloading = () => {
+  if (module.hot) {
+    module.hot.accept()
+  }
 }
 
 const main = () => {

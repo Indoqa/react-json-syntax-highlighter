@@ -4,9 +4,9 @@
   "description": "Serialize javascript objects as highlighted, formatted json",
   "main": "./dist/ReactJsonSyntaxHighlighter.min.js",
   "scripts": {
-    "bundle": "webpack --config webpack.config.js",
-    "dev": "node ./playground/server.js",
-    "prepublish": "npm run bundle",
+    "start": "node ./src/dev/server.js",
+    "dist": "indoqa-webpack ./indoqa-webpack-options.js",
+    "prepublish": "npm run dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,29 +30,11 @@
     "react": "^0.14.0 || ^15.0.0-0",
     "react-dom": "^0.14.0 || ^15.0.0-0"
   },
+  "dependencies": {
+    "react": "15.3.0",
+    "react-dom": "15.3.0"
+  },
   "devDependencies": {
-    "autoprefixer": "6.3.6",
-    "autoprefixer-loader": "3.2.0",
-    "babel-core": "6.3.15",
-    "babel-eslint": "6.0.2",
-    "babel-loader": "6.2.0",
-    "babel-preset-es2015": "6.3.13",
-    "babel-preset-react": "6.3.13",
-    "babel-preset-react-hmre": "1.1.1",
-    "babel-register": "6.3.13",
-    "css-loader": "0.23.1",
-    "eslint": "2.5.3",
-    "eslint-config-indoqa": "1.0.14",
-    "eslint-plugin-react": "4.2.3",
-    "express": "4.13.4",
-    "extract-text-webpack-plugin": "1.0.1",
-    "react": "15.0.1",
-    "react-dom": "15.0.1",
-    "style-loader": "^0.13.1",
-    "stylus": "^0.54.2",
-    "stylus-loader": "^2.0.0",
-    "webpack": "1.13.0",
-    "webpack-dev-middleware": "1.6.1",
-    "webpack-hot-middleware": "2.10.0"
+    "indoqa-webpack": "^0.6.2"
   }
 }
