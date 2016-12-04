@@ -10,7 +10,7 @@ const ReactJsonSyntaxHighlighter = ({obj}) => {
 
   let json = JSON.stringify(obj, undefined, 2)
   json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-  json = json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g,
+  json = json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+-]?\d+)?)/g,
     (match) => {
       let cls = 'number'
       if (/^"/.test(match)) {
@@ -35,7 +35,7 @@ const ReactJsonSyntaxHighlighter = ({obj}) => {
 }
 
 ReactJsonSyntaxHighlighter.propTypes = {
-  obj: PropTypes.object.isRequired,
+  obj: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
 }
 
 export default ReactJsonSyntaxHighlighter

@@ -5,9 +5,9 @@
   "main": "./dist/ReactJsonSyntaxHighlighter.min.js",
   "scripts": {
     "start": "node ./src/dev/server.js",
-    "dist": "indoqa-webpack ./indoqa-webpack-options.js",
-    "prepublish": "npm run dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dist": "yarn run lint && indoqa-webpack ./indoqa-webpack-options.js",
+    "prepublish": "yarn run dist",
+    "lint": "indoqa-eslint ./src/main"
   },
   "repository": {
     "type": "git",
@@ -31,10 +31,10 @@
     "react-dom": "^0.14.0 || ^15.0.0-0"
   },
   "dependencies": {
-    "react": "15.3.0",
-    "react-dom": "15.3.0"
+    "react": "15.4.1",
+    "react-dom": "15.4.1"
   },
   "devDependencies": {
-    "indoqa-webpack": "^0.6.5"
+    "indoqa-webpack": "0.7.8"
   }
 }
