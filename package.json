@@ -28,8 +28,8 @@
   },
   "homepage": "https://github.com/Indoqa/react-json-syntax-highlighter#readme",
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0-0",
-    "react-dom": "^0.14.0 || ^15.0.0-0"
+    "react": "^0.14.0 || ^15.0.0-0 || ^16.4.0-0",
+    "react-dom": "^0.14.0 || ^15.0.0-0 || ^16.4.0-0"
   },
   "dependencies": {
     "prop-types": "^15.6.1",
