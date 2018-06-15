@@ -1,13 +1,14 @@
 {
   "name": "react-json-syntax-highlighter",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "description": "Serialize javascript objects as highlighted, formatted json",
   "main": "./dist/ReactJsonSyntaxHighlighter.min.js",
   "scripts": {
     "start": "node ./src/dev/server.js",
     "dist": "yarn run lint && indoqa-webpack ./indoqa-webpack-options.js",
     "prepublish": "yarn run dist",
-    "lint": "indoqa-eslint ./src/main"
+    "lint": "indoqa-eslint ./src/main",
+    "test": "react-scripts test --env=jsdom"
   },
   "repository": {
     "type": "git",
@@ -27,14 +28,16 @@
   },
   "homepage": "https://github.com/Indoqa/react-json-syntax-highlighter#readme",
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0-0",
-    "react-dom": "^0.14.0 || ^15.0.0-0"
+    "react": "^0.14.0 || ^15.0.0-0 || ^16.4.0-0",
+    "react-dom": "^0.14.0 || ^15.0.0-0 || ^16.4.0-0"
   },
   "dependencies": {
-    "react": "15.4.1",
-    "react-dom": "15.4.1"
+    "prop-types": "^15.6.1",
+    "react": "16.4.0",
+    "react-dom": "16.4.0"
   },
   "devDependencies": {
-    "indoqa-webpack": "0.7.8"
+    "indoqa-webpack": "1.2.0",
+    "react-scripts": "^1.1.4"
   }
 }
