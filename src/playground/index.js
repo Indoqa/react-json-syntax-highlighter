@@ -9,8 +9,8 @@ const renderAppWrappedInReduxAndRouter = () => {
     booleanProp: true,
     nullProp: null,
     nestedProp: {
-      nestedPropBar: 'bar'
-    }
+      nestedPropBar: 'bar',
+    },
   }
   render(
     <ReactJsonSyntaxHighlighter obj={obj} />,
