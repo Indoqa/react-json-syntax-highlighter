@@ -35,9 +35,9 @@
     "prop-types": "^15.6.1"
   },
   "devDependencies": {
-    "indoqa-webpack": "1.2.0",
+    "indoqa-webpack": "2.2.0",
     "react": "16.4.2",
     "react-dom": "16.4.2",
-    "react-scripts": "^1.1.4"
+    "react-scripts": "^5.0.1"
   }
 }
